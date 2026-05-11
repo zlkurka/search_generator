@@ -11,6 +11,7 @@ outcomes = {
 
     Category.depression: ["depression", "depressive", "depressive disorder", "MDD", "PDD"],
     Category.anxiety: ["anxiety", "anxious", "anxiety disorder", "panic", "phobia", "GAD"],
+    Category.self_injury: ["self-injury", "self injury", "self-harm", "self harm", "NSSI"]
 
 }
 

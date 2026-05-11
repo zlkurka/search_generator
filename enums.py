@@ -16,6 +16,7 @@ class Category(EnumWithValueRepr):
     # Outcomes
     depression = "Depression"
     anxiety = "Anxiety"
+    self_injury = "Self-injury"
 
     # Populations
     lgbt = "LGBT"
