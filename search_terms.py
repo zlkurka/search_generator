@@ -17,7 +17,7 @@ outcomes = {
 populations = {
 
     Category.lgbt: ["LGBT", "LGBTQ", "LGBTQ+", "LGBTQIA", "LGBTQIA+", "queer", "gay", "lesbian", "bisexual", "transgender", "genderqueer", "non binary", "non-binary", "nonbinary"],
-    Category.undocumented: ["undocumented", "immigrant", "migrant", "emigrant", "unauthorized", "illegal"],
+    Category.undocumented: ["undocumented", "immigrant", "migrant", "emigrant", "DACA", "unauthorized", "illegal"],
     Category.children: ["children", "youth", "kids", "students", "young people"],
 
 }
