@@ -38,7 +38,7 @@ def main():
         search_text += "("
         
         for iter2 in range(len(search_term_clusters)):
-            search_text += ("(" + search_term_clusters[iter2] + ")")
+            search_text += ('("' + search_term_clusters[iter2] + '")')
             if iter2 != len(search_term_clusters) - 1:
                 search_text += " OR "
 

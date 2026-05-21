@@ -2,7 +2,7 @@ from enums import Category
 
 interventions = {
     
-    Category.dbt: ["DBT", "dialectical behavioral therapy"],
+    Category.dbt: ["DBT", "dialectical behavior therapy"],
     Category.act: ["ACT", "acceptance and commitment therapy"],
 
 }
