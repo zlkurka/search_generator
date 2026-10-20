@@ -6,7 +6,8 @@ from pyperclip import copy
 def main():
    
     terms_included = []
-    menu_options = ["Add intervention", "Add outcome", "Add population",]
+    menu_options = ["Add intervention", "Add outcome", "Add population", "Enter terms category manually"]
+    manual_terms_added = []
     
     while True:
         
@@ -17,14 +18,24 @@ def main():
                 category = outcomes
             case "Add population":
                 category = populations
+            case "Enter terms category manually":
+                manual_terms_added = []
+                print("Input nothing to finish adding search terms")
+                while True:
+                    added_term = input("Enter search term without quotes (ex: DBT): ")
+                    if not added_term:
+                        break
+                    manual_terms_added.append(added_term)
             case "Generate search":
                 break
-        
-        choice: Category | str = menu(options=list(category) + ["Go back"], menu_text="What would you like to add?")
-        if choice == "Go back":
-            continue
 
-        terms_included.append(category[choice])
+        if manual_terms_added:
+            terms_included.append(manual_terms_added)
+        else:
+            choice: Category | str = menu(options=list(category) + ["Go back"], menu_text="What would you like to add?")
+            if choice == "Go back":
+                continue
+            terms_included.append(category[choice])
 
         if "Generate search" not in menu_options:
             menu_options.append("Generate search")
