@@ -1,31 +1,31 @@
-from enums import Category
-
 interventions = {
     
-    Category.dbt: ["DBT", "dialectical behavior therapy"],
-    Category.act: ["ACT", "acceptance and commitment therapy"],
+    "DBT": ["DBT", "dialectical behavior therapy"],
+    "ACT": ["ACT", "acceptance and commitment therapy"],
 
 }
 
 outcomes = {
 
-    Category.depression: ["depression", "depressive", "depressive disorder", "MDD", "PDD"],
-    Category.anxiety: ["anxiety", "anxious", "anxiety disorder", "panic", "phobia", "GAD"],
-    Category.self_injury: ["self-injury", "self injury", "self-harm", "self harm", "NSSI"],
-    "Social skills": ["social", "peer"]
+    "Depression": ["depression", "depressive", "depressive disorder", "MDD", "PDD"],
+    "Anxiety": ["anxiety", "anxious", "anxiety disorder", "panic", "phobia", "GAD"],
+
+    "Self-injury": ["self-injury", "self injury", "self-harm", "self harm", "NSSI"],
+    "Social skills": ["social", "peer", "connectedness"],
+    "Avoidance": ["avoidance", "avoid", "avoiding"],
 
 }
 
 populations = {
 
-    Category.lgbt: ["LGBT", "LGBTQ", "LGBTQ+", "LGBTQIA", "LGBTQIA+", "queer", "gay", "lesbian", "bisexual", "transgender", "genderqueer", "non binary", "non-binary", "nonbinary"],
-    Category.undocumented: ["undocumented", "immigrant", "migrant", "emigrant", "DACA", "unauthorized", "illegal"],
-    Category.children: ["children", "youth", "kids", "students", "young people"],
+    "LGBT": ["LGBT", "LGBTQ", "LGBTQ+", "LGBTQIA", "LGBTQIA+", "queer", "gay", "lesbian", "bisexual", "transgender", "genderqueer", "non binary", "non-binary", "nonbinary"],
+    "Undocumented immigrants": ["undocumented", "immigrant", "migrant", "emigrant", "refugee", "DACA",],
+    "Children": ["children", "youth", "kids", "students", "young people"],
 
 }
 
 settings = {
 
-    "school": ["school", "education", "student"]
+    "School": ["school", "education", "student"]
 
 }
